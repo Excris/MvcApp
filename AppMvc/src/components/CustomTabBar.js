@@ -1,5 +1,5 @@
 import React from 'react';
-import { TouchableOpacity, Text, View, ImageBackground } from 'react-native';
+import { TouchableOpacity, Text, View, StyleSheet } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 
 
@@ -24,19 +24,21 @@ export default function CustomTabBar() {
     return (
         <View style={{ flexDirection: 'row', justifyContent: 'space-around', padding: 10 }}>
             {TABS.map(item => (
-                <TabItem key={item.id} item={item} />
+                <TabItem key={item.id} item={item} navigarion ={navigarion} />
             ))}
         </View>
     );
 }
 
-const style =StyleSheet.create({
+const Styles =StyleSheet.create({
     container:{
-        flexDirection: '',
-        justifyContent: '',
-        alignItems: '',
-        heigh: 65,
-        backgroundColor: '#ddd',
+        flexDirection: 'row', 
+        justifyContent: 'space-around', 
+        alignItems: 'center',
+        height: 65,
+        backgroundColor: '#fff',
+        borderTopWidth: 1,
+        borderTopColor: '#eee'
 
     },
     

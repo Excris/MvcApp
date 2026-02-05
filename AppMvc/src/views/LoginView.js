@@ -1,5 +1,5 @@
-import {userState} from 'react'
 import React, { useState } from 'react';
+import {userState} from 'react'
 import { View, Text, TextInput, TouchableOpacity, StyleSheet, KeyboardAvoidingView, Platform } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
@@ -46,6 +46,16 @@ export default function LoginView({ navigation }) {
                         secureTextEntry 
                     />
                 </View>
+
+                {/* Link para Esqueci Senha */}
+<TouchableOpacity 
+    style={{ alignSelf: 'flex-end', marginTop: 10 }} 
+    onPress={() => navigation.navigate('EsqueceuSenha')}
+>
+    <Text style={{ color: '#007AFF' }}>Esqueceu a senha?</Text>
+</TouchableOpacity>
+
+                {/* Opção de Confirmação de entrada */}
 
                 <TouchableOpacity style={styles.button} onPress={handleLogin}>
                     <Text style={styles.buttonText}>Entrar</Text>

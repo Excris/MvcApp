@@ -11,13 +11,13 @@ const Stack = createStackNavigator();
 export default function AppRoutes(){
     return(
         <Stack.Navigator>
-                <Stack.Screen name = "Home" component={HomeView} option ={{title:'Minha home'}}/>
+                <Stack.Screen name = "Home" component={HomeView} options ={{title:'Minha home'}}/>
 
-                <Stack.Screen name = "Login" component={LoginView} option ={{title:'Meu login'}}/> 
+                <Stack.Screen name = "Login" component={LoginView} options ={{title:'Meu login'}}/> 
                 
-                <Stack.Screen name = "Cadastro" component={CadastroView} option ={{title:'Meu Cadastro'}}/>
+                <Stack.Screen name = "Cadastro" component={CadastroView} options ={{title:'Meu Cadastro'}}/>
 
-
+                <Stack.Screen name="EsqueceuSenha" component={ForgotPassView} options={{ title: 'Recuperar Senha' }} />
                    
         </Stack.Navigator>
     )
