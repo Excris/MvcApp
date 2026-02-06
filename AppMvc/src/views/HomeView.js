@@ -28,5 +28,5 @@ export default function HomeView({ navigation }) {
 }
 
 const styles = StyleSheet.create({
-    container: { flex: 1, backgroundColor: '#f5f5f5' },
+    container: { flex: 1, backgroundColor: '#3b3838ff' },
 });

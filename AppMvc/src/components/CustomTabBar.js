@@ -20,7 +20,7 @@ const TabItem = ({ item }) => {
     );
 }
 
-export default function CustomTabBar() {
+export default function CustomTabBar({navigation}) {
     return (
         <View style={{ flexDirection: 'row', justifyContent: 'space-around', padding: 10 }}>
             {TABS.map(item => (
