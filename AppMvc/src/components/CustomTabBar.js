@@ -24,7 +24,7 @@ export default function CustomTabBar() {
     return (
         <View style={{ flexDirection: 'row', justifyContent: 'space-around', padding: 10 }}>
             {TABS.map(item => (
-                <TabItem key={item.id} item={item} navigarion ={navigarion} />
+                <TabItem key={item.id} item={item} navigation ={navigation} />
             ))}
         </View>
     );
