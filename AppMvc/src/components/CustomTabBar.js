@@ -11,11 +11,15 @@ const TABS = [
     { id: '5', name: 'Perfil', icon: 'person', isCurrent: false, route: '' }
 ];
 
-const TabItem = ({ item }) => {
+// No arquivo CustomTabBar.js, ajuste o TabItem:
+const TabItem = ({ item, navigation }) => {
     return (
-        <TouchableOpacity style={{ alignItems: 'center' }}>
-            <Ionicons name={`${item.icon}-outline`} size={24} color={'#888'} />
-            <Text>{item.name}</Text>
+        <TouchableOpacity 
+            style={{ alignItems: 'center' }} 
+            onPress={() => item.route ? navigation.navigate(item.route) : null}
+        >
+            <Ionicons name={item.isCurrent ? item.icon : `${item.icon}-outline`} size={24} color={'#888'} />
+            <Text style={{ fontSize: 10 }}>{item.name}</Text>
         </TouchableOpacity>
     );
 }
