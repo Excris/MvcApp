@@ -9,6 +9,7 @@ const TABS = [
     { id: '3', name: 'Desejos', icon: 'heart', isCurrent: false, route: '' },
     { id: '4', name: 'Pedidos', icon: 'mail', isCurrent: false, route: '' },
     { id: '5', name: 'Perfil', icon: 'person', isCurrent: false, route: 'Profile' }
+    
 ];
 
 // No arquivo CustomTabBar.js, ajuste o TabItem:
